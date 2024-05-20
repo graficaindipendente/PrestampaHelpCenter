@@ -137,6 +137,7 @@ template {
 }
 a {
   background: transparent;
+  text-decoration: none;
 }
 a:active,
 a:hover {
@@ -1626,12 +1627,12 @@ blockquote {
    Link
    ========================================================================== */
 a {
-  color: #2288cc;
+  color: #333333;
   text-decoration: none;
   font-size: inherit;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 /* ==========================================================================
    Mark inside text
@@ -1681,11 +1682,11 @@ a:hover {
   font-size: 0.9rem;
 }
 .mark.fill.blue {
-  background-color: #2288cc;
+  background-color: #1CB3B1;
   color: white;
 }
 .mark.fill.blue-light {
-  background-color: #48cacc;
+  background-color: #1CB3B1;
   color: white;
 }
 .mark.fill.purple {
@@ -1693,7 +1694,7 @@ a:hover {
   color: white;
 }
 .mark.fill.green {
-  background-color: #44bb55;
+  background-color: #1CB3B1;
   color: white;
 }
 .mark.fill.orange {
@@ -1720,7 +1721,7 @@ h4.color.blue,
 h5.color.blue,
 h6.color.blue,
 span.color.blue {
-  color: #2288cc;
+  color: #1CB3B1;
 }
 a.color.blue-light,
 p.color.blue-light,
@@ -1731,7 +1732,7 @@ h4.color.blue-light,
 h5.color.blue-light,
 h6.color.blue-light,
 span.color.blue-light {
-  color: #48cacc;
+  color: #1CB3B1;
 }
 a.color.purple,
 p.color.purple,
@@ -1742,7 +1743,7 @@ h4.color.purple,
 h5.color.purple,
 h6.color.purple,
 span.color.purple {
-  color: #8d3deb;
+  color: #333333;
 }
 a.color.green,
 p.color.green,
@@ -1801,6 +1802,21 @@ span.color.grey {
 .image.isolated {
   margin: 30px 0;
 }
+
+.imaget {
+  padding: 4px;
+  border: 1px solid #cbd3dd;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  max-width: 100%;
+}
+.imaget.remove-border {
+  border: 0;
+}
+.imaget.isolated {
+  margin: 30px 0;
+}
+
 /* ==========================================================================
    Unordered List
    ========================================================================== */
@@ -7963,7 +7979,7 @@ Copyright (c) 2015 Daniel Eden
   margin-bottom: 30px;
 }
 .footer-extended-menu-title {
-  color: #2288cc;
+  color: #1CB3B1;
   font-size: 14px;
 }
 .footer-extended-menu-list {
@@ -8052,7 +8068,7 @@ Copyright (c) 2015 Daniel Eden
   background-color: #3da84d;
 }
 .button.blue {
-  background-color: #2288cc;
+  background-color: #1CB3B1;
 }
 .button.blue:hover {
   background-color: #1e79b6;
@@ -8064,10 +8080,10 @@ Copyright (c) 2015 Daniel Eden
   background-color: #37c2c4;
 }
 .button.purple {
-  background-color: #8d3deb;
+  background-color: #333333;
 }
 .button.purple:hover {
-  background-color: #7f26e9;
+  background-color: #333333;
 }
 .button.orange {
   background-color: #ff530d;
@@ -8089,16 +8105,16 @@ Copyright (c) 2015 Daniel Eden
   border-color: #44bb55;
 }
 .button.stroke.blue {
-  color: #2288cc;
-  border-color: #2288cc;
+  color: #1CB3B1;
+  border-color: #1CB3B1;
 }
 .button.stroke.blue-light {
   color: #48cacc;
   border-color: #48cacc;
 }
 .button.stroke.purple {
-  color: #8d3deb;
-  border-color: #8d3deb;
+  color: #333333;
+  border-color: #333333;
 }
 .button.stroke.orange {
   color: #ff530d;
@@ -9394,7 +9410,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   display: none;
 }
 .menu ul .sf-with-ul:hover:after {
-  color: #2288cc;
+  color: #1CB3B1;
   border-color: #eaedf1;
   content: '\f105';
   font-family: 'FontAwesome';
@@ -9485,7 +9501,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding: 15px 25px;
 }
 .menu > li > ul li a:hover {
-  color: #2288cc;
+  color: #1CB3B1;
 }
 .menu > li > ul li a:hover:before {
   opacity: 1;
@@ -9528,12 +9544,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
-  font-size: 9px;
+  font-size: 12px;
   padding: 0px 8px;
   height: 18px;
   border-radius: 4px;
   color: white;
-  background-color: #2288cc;
+  background-color: #1CB3B1;
   line-height: 19px;
   letter-spacing: 1px;
 }
@@ -9541,7 +9557,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   content: '';
   position: absolute;
   display: block;
-  background-color: #2288cc;
+  background-color: #1CB3B1;
   z-index: -1;
   width: 3px;
   height: 3px;
@@ -9571,7 +9587,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   right: 10px;
   font-size: 12px;
   padding: 0 12px;
-  background-color: #2288cc;
+  background-color: #1CB3B1;
   line-height: 22px;
   top: 0;
   color: white;
@@ -9717,7 +9733,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #808488;
 }
 .menu-vertical li.has-children.selected > a:before {
-  color: #2288cc;
+  color: #1CB3B1;
   content: '—';
   font-size: 12px;
 }
@@ -9728,7 +9744,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   line-height: 40px;
 }
 .menu-vertical ul li.selected > a {
-  color: #2288cc;
+  color: #1CB3B1;
 }
 .menu-vertical ul a {
   padding-left: 40px;
@@ -9743,7 +9759,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: relative;
 }
 .menu-vertical > li.selected > a {
-  color: #2288cc;
+  color: #1CB3B1;
 }
 .menu-vertical a {
   padding: 0 15px 0 20px;
@@ -10137,7 +10153,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   transition: color 0.25s ease;
 }
 .languages-list li a:hover {
-  color: #2288cc;
+  color: #1CB3B1;
 }
 .page-title {
   font-size: 5em;
@@ -10172,7 +10188,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .morphext > .animated {
   display: inline-block;
-  color: #2288cc;
+  color: #1CB3B1;
   z-index: 4;
   position: relative;
 }
@@ -10449,7 +10465,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   width: 22px;
 }
 .box-icon-large {
-  color: #2288cc;
+  color: #1CB3B1;
   font-size: 2.5em;
   margin-bottom: 20px;
   width: 75px;
@@ -10499,7 +10515,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   display: block;
   margin-left: 3px;
   line-height: 1.4;
-  color: #2288cc;
+  color: #1CB3B1;
 }
 .browsers {
   margin: 30px 0;
@@ -10665,10 +10681,10 @@ li.browser-partial:hover .browser-icon:after {
   color: #44bb55;
 }
 .note.blue {
-  box-shadow: inset 5px 0px 0px 0px #2288cc;
+  box-shadow: inset 5px 0px 0px 0px #1CB3B1;
 }
 .note.blue .note-title {
-  color: #2288cc;
+  color: #1CB3B1;
 }
 .note.blue-light {
   box-shadow: inset 5px 0px 0px 0px #48cacc;
@@ -10683,10 +10699,10 @@ li.browser-partial:hover .browser-icon:after {
   color: #ff3625;
 }
 .note.purple {
-  box-shadow: inset 5px 0px 0px 0px #8d3deb;
+  box-shadow: inset 5px 0px 0px 0px #BABAB1;
 }
 .note.purple .note-title {
-  color: #8d3deb;
+  color: #333333;
 }
 .note-bounce {
   -webkit-animation: note-bounce 3s Ease-in-out infinite;
@@ -11118,7 +11134,7 @@ pre.line-numbers > code {
   padding: 0 10px;
 }
 .code-highlight-tabs.tabs .steps ul > li.current a {
-  color: #2288cc;
+  color: #1CB3B1;
 }
 .file-tree-title {
   background-color: #f6f7f8;
@@ -11205,12 +11221,12 @@ pre.line-numbers > code {
 .file-tree-list li.is-folder:before {
   width: 16px;
   content: "\f114";
-  color: #2288cc;
+  color: #1CB3B1;
 }
 .file-tree-list li.is-folder.items-expanded:before {
   width: 16px;
   content: "\f115";
-  color: #2288cc;
+  color: #1CB3B1;
 }
 .file-tree-list li.is-file:before {
   width: 16px;
@@ -11382,7 +11398,7 @@ pre.line-numbers > code {
   transition: opacity 0.25s ease, background-color 0.25s ease;
 }
 .steps-interactive .steps ul > li.current {
-  background-color: #2288cc;
+  background-color: #1CB3B1;
   outline: none;
 }
 .steps-interactive .steps ul > li.current a,
@@ -11629,10 +11645,10 @@ pre.line-numbers > code {
   bottom: 30px;
   width: 40px;
   height: 40px;
-  border: 1px solid #2288cc;
+  border: 1px solid #1CB3B1;
   text-align: center;
   border-radius: 3px;
-  color: #2288cc;
+  color: #1CB3B1;
   line-height: 38px;
   background-color: white;
 }
@@ -11652,10 +11668,10 @@ pre.line-numbers > code {
   bottom: 30px;
   width: 40px;
   height: 40px;
-  border: 1px solid #2288cc;
+  border: 1px solid #1CB3B1;
   text-align: center;
   border-radius: 3px;
-  color: #2288cc;
+  color: #1CB3B1;
   line-height: 38px;
   background-color: white;
 }
@@ -11959,7 +11975,7 @@ pre.line-numbers > code {
   display: none;
 }
 .faq-keyword {
-  color: #2288cc;
+  color: #1CB3B1;
 }
 .faq-filter {
   border-bottom: 1px solid #cbd3dd;
@@ -12021,8 +12037,8 @@ pre.line-numbers > code {
   vertical-align: top;
   zoom: 1;
   *display: inline;
-  color: #2288cc;
-  border: 1px solid #2288cc;
+  color: #1CB3B1;
+  border: 1px solid #1CB3B1;
   padding: 0 20px;
   border-radius: 25px;
   line-height: 40px;
@@ -12053,7 +12069,7 @@ pre.line-numbers > code {
   font-size: 1.5em;
   line-height: 1.4;
   color: white;
-  background-color: #2288cc;
+  background-color: #1CB3B1;
   padding: 16px 50px 16px 30px;
   margin: 0;
   border-radius: 3px 3px 0 0;
@@ -14019,8 +14035,8 @@ and the native poster can take over */
   margin: 0 auto;
 }
 .video-js:hover button.vjs-big-play-button {
-  color: #2288cc;
-  border-color: #2288cc;
+  color: #1CB3B1;
+  border-color: #1CB3B1;
 }
 .video-js button.vjs-big-play-button {
   top: 0;
@@ -14037,7 +14053,7 @@ and the native poster can take over */
   transition: color 0.3s ease, border-color 0.3s ease;
 }
 .video-js .vjs-control-bar {
-  background-color: #2288cc !important;
+  background-color: #1CB3B1 !important;
   background-color: rgba(34, 136, 204, 0.7) !important;
 }
 .vjs-poster {
@@ -14173,20 +14189,20 @@ and the native poster can take over */
 }
 .vjs-playlist ul li a.vjs-track.currentTrack:before {
   content: '\f028';
-  color: #2288cc;
+  color: #1CB3B1;
   font-size: 14px;
   text-indent: 3px;
   line-height: 28px;
 }
 .vjs-playlist ul li a.vjs-track.currentTrack {
   background-color: white;
-  color: #2288cc;
+  color: #1CB3B1;
 }
 .vjs-playlist ul li:hover {
   background-color: white;
 }
 .vjs-playlist ul li:hover a.vjs-track {
-  color: #2288cc;
+  color: #1CB3B1;
   text-decoration: none;
 }
 .vjs-playlist ul li a.video-playlist-item-download {
@@ -14205,7 +14221,7 @@ and the native poster can take over */
   color: #808488;
 }
 .vjs-playlist ul li a.video-playlist-item-download:hover {
-  color: #2288cc;
+  color: #1CB3B1;
 }
 .video-playlist-item-duration {
   position: absolute;
@@ -14432,7 +14448,7 @@ and the native poster can take over */
   transition: color 0.25s ease;
 }
 .social li a:hover {
-  color: #2288cc;
+  color: #1CB3B1;
 }
 .notification {
   padding: 150px 0;
@@ -14579,7 +14595,7 @@ input.register-checkbox {
 .contacts-title {
   font-size: 2em;
   margin-bottom: 40px;
-  color: #2288cc;
+  color: #1CB3B1;
 }
 .contacts-label {
   font-size: 0.875em;
@@ -14672,7 +14688,7 @@ textarea.contacts-input {
   font-size: 0.8125em;
 }
 .changelog-wrapper {
-  width: 700px;
+  width: 1500px;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -14840,11 +14856,11 @@ textarea.contacts-input {
   text-align: center;
 }
 .changelog-switch:before {
-  content: 'veiw updated files';
+  content: 'nuove grafiche';
   display: block;
 }
 .changelog-switch:after {
-  content: 'view updated features';
+  content: 'cronologia eventi';
   display: none;
 }
 .changelog-update-description {
@@ -14858,14 +14874,14 @@ textarea.contacts-input {
 .changelog-files-changed {
   display: none;
 }
-.changelog-update-description.changelog-improvement .changelog-type {
-  background-color: #4AA3BA;
+.changelog-update-description.changelog-alerts .changelog-type {
+  background-color: #FF3624;
 }
-.changelog-update-description.changelog-bug-fix .changelog-type {
-  background-color: #DA5C53;
+.changelog-update-description.changelog-errori .changelog-type {
+  background-color: #333333;
 }
 .changelog-type {
-  background-color: #98C74E;
+  background-color: #48CACC;
   color: white;
   display: inline-block;
   vertical-align: top;
@@ -15086,7 +15102,7 @@ input.changelog-input {
   color: inherit;
 }
 .article-meta-item a:hover {
-  color: #2288cc;
+  color: #1CB3B1;
 }
 .article-meta-item:before {
   position: absolute;
@@ -15116,7 +15132,7 @@ input.changelog-input {
 .article-meta-likes:before {
   content: '\e642';
 }
-.article-featured-image {
+.article-newsd-image {
   max-width: 100%;
   margin-bottom: 40px;
 }
@@ -15429,7 +15445,7 @@ input.changelog-input {
   background-color: #fff;
   background-image: linear-gradient(rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 65%, rgba(0, 0, 0, 0.03) 100%);
 }
-.price-list:hover .feature-is-disabled {
+.price-list:hover .news-is-disabled {
   opacity: 0.3;
 }
 .price-list-title {
@@ -15444,19 +15460,19 @@ input.changelog-input {
 .price-list-price-units {
   font-size: 20px;
 }
-.price-list-features {
+.price-list-newss {
   text-align: center;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-.price-list-feature-item {
+.price-list-news-item {
   padding: 5px 0;
   font-weight: 300;
 }
-.price-list-feature-item.feature-is-disabled {
+.price-list-news-item.news-is-disabled {
   text-decoration: line-through;
-  color: #b3b3b3;
+  color: #1CB3B1;
   -webkit-transition: opacity 0.25s ease;
   -moz-transition: opacity 0.25s ease;
   -ms-transition: opacity 0.25s ease;
@@ -15466,14 +15482,14 @@ input.changelog-input {
   height: 38px;
   position: relative;
 }
-.price-list-feature-item.feature-is-disabled:after {
+.price-list-news-item.news-is-disabled:after {
   content: '';
   position: absolute;
   left: 50%;
   top: 50%;
   width: 20px;
   height: 1px;
-  background-color: #b6bdc7;
+  background-color: #1CB3B1;
   margin-left: -10px;
 }
 .price-list-button {
@@ -15482,7 +15498,7 @@ input.changelog-input {
   text-align: center;
   line-height: 50px;
   font-weight: 300;
-  border: 1px solid #2288cc;
+  border: 1px solid #1CB3B1;
 }
 .price-list-button:hover {
   text-decoration: none;
@@ -15534,7 +15550,7 @@ input.changelog-input {
   vertical-align: top;
   zoom: 1;
   *display: inline;
-  background-color: #2288cc;
+  background-color: #1CB3B1;
   border: 1px solid rgba(0, 0, 0, 0.1);
   color: white;
   padding: 0 30px;
@@ -15727,7 +15743,7 @@ input.changelog-input {
   border-bottom: 1px solid #dae0e7;
 }
 .one-page-nav li.is-active > a {
-  color: #2288cc;
+  color: #1CB3B1;
 }
 .one-page-nav li.is-active > a:after {
   width: 4px;
@@ -15751,7 +15767,7 @@ input.changelog-input {
   display: block;
   height: 100%;
   width: 0;
-  background-color: #2288cc;
+  background-color: #1CB3B1;
   left: 0;
   top: 0;
   -webkit-transition: width 0.25s ease;
@@ -15761,7 +15777,7 @@ input.changelog-input {
   transition: width 0.25s ease;
 }
 .one-page-nav li a:hover {
-  color: #2288cc;
+  color: #1CB3B1;
 }
 .one-page-nav li a:hover:after {
   width: 4px;
