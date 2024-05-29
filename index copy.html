@@ -26,14 +26,28 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/custom.css">
 	<script src="js/modernizr.js"></script>
-	<script src="js/custom.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> <!-- Include la libreria Marked -->
 
 
 </head>
 
 <body>
-
+	<script>
+		// Funzione per caricare e visualizzare il contenuto del file TXT
+		function loadTxtFile(file) {
+		  var rawFile = new XMLHttpRequest();
+		  rawFile.open("GET", file, false);
+		  rawFile.onreadystatechange = function () {
+			if(rawFile.readyState === 4) {
+			  if(rawFile.status === 200 || rawFile.status == 0) {
+				var allText = rawFile.responseText;
+				document.getElementById('fileContent').innerText = allText;
+			  }
+			}
+		  }
+		  rawFile.send(null);
+		}
+	  loadTxtFile('vers.txt');
+	  </script>
 	<div class="page js-page ">
 		<div class="header header-over large">
 			<div class="container">
@@ -48,7 +62,8 @@
 						<nav class="right helper">
 							<ul class="menu sf-menu js-menu">
 								<li><a href="index.html">alerts board</a></li>
-
+								<li><a href="assets.html">assets</a></li>
+								<li><a href="knowledge.html">knowledge</a> <span class="menu-label">procedure</span> </li>
 									<li> | </li>
 								<li><a>tool links</a>
 									<ul>
@@ -100,20 +115,66 @@
 
 
 
+				<script>
+					// Funzione per caricare e visualizzare il contenuto del file TXT
+					function loadTxtFile(file) {
+					  var rawFile = new XMLHttpRequest();
+					  rawFile.open("GET", file, false);
+					  rawFile.onreadystatechange = function () {
+						if(rawFile.readyState === 4) {
+						  if(rawFile.status === 200 || rawFile.status == 0) {
+							var allText = rawFile.responseText;
+							document.getElementById('fileContent').innerText = allText;
+						  }
+						}
+					  }
+					  rawFile.send(null);
+					}
+				  loadTxtFile('vers.txt');
+				  </script>
 
 
 
 
 
 
-				<div class="note js-note red">		
-					<h4 class="note-title">RICORDA <STRong>ENTRO IL XX</STRong> IN TUTTO IL PRONTO13</h4>
-					<p class="note-description">BISOGNA PRENDERCI L'ABITUDINE!</p>
-				</div>
 
 
 
-						<div id="ultimora"></div>
+
+
+ 						<!-- AVVISO matite piantabili 
+						 <div class="note js-note red">						<span class="list-item-meta">
+							<sup>Codice</sup>  <a>matitesemibombo</a>
+						</span><p class="changelog-date">aprile 2024</p>
+							<h4 class="note-title">Matite Piantabili con Cartoncino Personalizzato Idea Bomboniera Botanica Green Ecologica Semi Fiori</h4>
+							<p class="note-description">AGGIORNATA la grafica originale. ATTENZIONE.</p>
+						</div>
+						 AVVISO tshirtdaddy  
+ 						AVVISO tshirtdaddy 
+						 <div class="note js-note purple">						<span class="list-item-meta">
+							<sup>Codice</sup>  <a>Pronto13</a>
+						</span><p class="changelog-date">aprile 2024</p>
+							<h4 class="note-title">EPSON IMMAGINI ed EPSON FOTO</h4>
+							<p class="note-description">NON SERVE PIU' IL MARGINE DI 1CM/2CM NEI DI IMPOSIZIONE NEGLI EPSON DEL PRONTO13.</p>
+						</div>
+						AVVISO tshirtdaddy
+   						AVVISO tshirtdaddy 
+						   <div class="note js-note purple">						<span class="list-item-meta">
+							<sup>Codice</sup>  <a>tshirtdaddy</a>
+						</span><p class="changelog-date">marzo 2024</p>
+							<h4 class="note-title">T-Shirt o Felpa Maglietta “Daddy” Personalizzata con Cuoricino</h4>
+							<p class="note-description">FILE DA CUSTOMLY stacca leggermente la scritta DADDY dal cuore. L'hanno fatta troppo vicina.</p>
+						</div>
+						AVVISO tshirtdaddy  -->
+			
+
+						<h3 class="category-title">alerts board</h3>
+							<script src="https://gist.github.com/graficaindipendente/4096496146dcd01eb1be3e472a91dffb.js"></script>				
+<!--
+<iframe src="xxx" width="100%" height="1200"></iframe>
+-->
+									
 </body>
 
 </html>
