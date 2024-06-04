@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerca Ordine</title>
+</head>
+<body>
+    <script>
+        let codice = prompt("Numero d'ordine:");
+        if (codice.length === 6 && !isNaN(codice)) {
+            let nuovoURL = `https://www.olalla.it/wp-admin/post.php?post=${codice}&action=edit`;
+            window.location.href = nuovoURL;
+        } else {
+            alert("Per favore, inserisci un numero d'ordine corretto.");
+        }
+    </script>
+</body>
+</html>
