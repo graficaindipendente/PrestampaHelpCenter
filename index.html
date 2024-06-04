@@ -3,7 +3,7 @@
 
 <head>
 	<!-- Page title -->
-	<title>Alerts Prestampa | Olallà</title>	<!-- Page description -->
+	<title>Report Prestampa | Olallà</title>	<!-- Page description -->
 	<meta name="description" content="">
 	<!-- Meta -->
 	<meta charset="UTF-8">
@@ -31,23 +31,7 @@
 </head>
 
 <body>
-	<script>
-		// Funzione per caricare e visualizzare il contenuto del file TXT
-		function loadTxtFile(file) {
-		  var rawFile = new XMLHttpRequest();
-		  rawFile.open("GET", file, false);
-		  rawFile.onreadystatechange = function () {
-			if(rawFile.readyState === 4) {
-			  if(rawFile.status === 200 || rawFile.status == 0) {
-				var allText = rawFile.responseText;
-				document.getElementById('fileContent').innerText = allText;
-			  }
-			}
-		  }
-		  rawFile.send(null);
-		}
-	  loadTxtFile('vers.md');
-	  </script>
+
 	<div class="page js-page ">
 		<div class="header header-over large">
 			<div class="container">
@@ -56,12 +40,12 @@
 						<a href="index.html" class="logo-image ">
 							<img src="img/logos/logo.png" alt="Olallà Help Center"></a>
 							<div class="docs-version js-docs-version">
-								<span class="docs-current-version js-docs-current-version"  id="fileContent"></span>
+								<span class="docs-current-version js-docs-current-version">v1.11 BETA</span>
 							</div></div>
 					<div class="col-md-9 col-sm-6 col-xs-6">
 						<nav class="right helper">
 							<ul class="menu sf-menu js-menu">
-								<li><a href="index.html">alerts board</a></li>
+								<li><a href="index.html">report</a></li>
 								<li><a href="assets.html">assets</a></li>
 								<li><a href="knowledge.html">knowledge</a> <span class="menu-label">procedure</span> </li>
 									<li> | </li>
@@ -79,24 +63,43 @@
 												<li><a href="https://www.olalla.it/wp-admin/edit.php?post_status=wc-in-grafica-oggi&post_type=shop_order&order_by_delivery" target="_blank">GRAFICA BY DELIVERY</a></li>
 												<li><a href="https://www.olalla.it/wp-admin/edit.php?post_status=wc-in-grafica-oggi&post_type=shop_order&order_by_delivery&orderby=date&order=asc" target="_blank">GRAFICA BY DATE</a></li>
 
-												<li><a href="https://www.olalla.it/wp-admin/edit.php?post_status=wc-remake-design&post_type=shop_order&order_by_delivery" target="_blank">URGENZE BY DELIVERY</a></li>
-												<li><a href="https://www.olalla.it/wp-admin/edit.php?post_status=wc-remake-design&post_type=shop_order&orderby=date&order=asc" target="_blank">URGENZE BY DATE</a></li>
+												<li><a href="https://www.olalla.it/wp-admin/edit.php?post_status=wc-remake-design&post_type=shop_order&order_by_delivery" target="_blank"><strong>URGENZE BY DELIVERY</strong></a></li>
+
 											</ul>
 										</li>
 
 										<li><a href="https://sellercentral.amazon.it/" target="_blank">AMAZON</a></li>
-										<li><a href="https://secure.helpscout.net/mailbox/f88f1b24d22dd4db/8219325/" target="_blank">HELP SCOUT</a></li>
+									
+										<li><a href="https://secure.helpscout.net/mailbox/f88f1b24d22dd4db/8219325/" target="_blank">
+											<i>HELP SCOUT mail</i><br><sub><strong>grafica@olalla.it</strong></sub></a></li>
+											<ul>
+												<li><a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">
+												<i>bombo@olalla.it</i><br><sub><strong>ex Bombo mail</strong></sub></a></li>
+												<li><a href="https://mail.google.com/mail/u/3/#inbox" target="_blank">
+												<i>alicec@olalla.it</i><br><sub><strong>ex Alice Bozze Grafica Mail</strong></sub></a></li>
+												<li><a href="https://mail.google.com/mail/u/2/#inbox" target="_blank">
+												<i>grafica@olalla.it</i><br><sub><strong>ex Bozze Grafica Mail</strong></sub></a></li>
+												<li><a href="xxx" target="_blank">xxx</a></li>
+											</ul>
+										</li>
+
+
+
 										<li><a href="https://app.todoist.com/app/project/prioritario-6V2rQ96HHmW5jXPX" target="_blank"><STRong>TodoIst</STRong></a></li>
 
 										<li><a>graphic tools</a>
 											<ul>
 												<li><a href="https://www.artilab.com/" target="_blank">Artilab<br><sub><strong>fornitore esterno</strong></sub></a></li>
-												<li><a href="https://www.spotifycodes.com/#create" target="_blank">Spotify Codes</a>
+												<li><a href="https://www.spotifycodes.com/#create" target="_blank"><i>Spotify Codes</i><br><sub><strong>genera QR Spotify code</strong></sub></a></li>
 													<ul><li><a href="https://open.spotify.com/search" target="_blank">Search</a></li></ul>
 												</li>
-												<li><a href="https://heavens-above.com/skychart2.aspx" target="_blank">SkyChart</a></li>
-												<li><a href="https://wordart.com/" target="_blank"> WordArt</a></li>
-												<li><a href="https://snazzymaps.com/" target="_blank"> SnazzyMaps</a></li>
+												<li><a href="https://heavens-above.com/skychart2.aspx" target="_blank"><i>SkyChart</i><br><sub><strong>layout base mappe</strong></sub></a></li>
+												<li><a href="https://wordart.com/" target="_blank"> 
+													<i>WordArt</i><br><sub><strong>genera layout tipografici</strong></sub></a></li>
+													
+													
+													
+													WordArt</a></li>
 											</ul>
 
                                             <li><a>editor</a>
@@ -167,10 +170,9 @@
 							<p class="note-description">FILE DA CUSTOMLY stacca leggermente la scritta DADDY dal cuore. L'hanno fatta troppo vicina.</p>
 						</div>
 						AVVISO tshirtdaddy  -->
-		
-						<script src="https://gist.github.com/graficaindipendente/4096496146dcd01eb1be3e472a91dffb.js"></script>
-            
-						<iframe src="https://docs.google.com/spreadsheets/d/1jqSxQamw2LWhcv91ospPaWT_hMDEm994JoEt0Cw5eNM/edit?usp=sharing" width="100%" height="1200"></iframe>
+
+						<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQTnJMoo7msbmfVJxSadkSzyuZKBjdKmXJDdNDtPRitylBGzRK0fOAXVGqh4IMKLAcb1UhkKQJbToeJ/pubhtml?widget=true&amp;headers=false" width="100%" height="1000px"></iframe>
+						<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQvRG3wMsRF3G3nOn8Fv54TMWauXWvBVQ4RgUg8xpbo1FVuEhi37Wl94M_9oZ9xtbRdQR8D1vCQLJiE/pubhtml?widget=true&amp;headers=false" width="100%" height="600px"></iframe>
 
 									
 </body>
