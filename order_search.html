@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        let codice = prompt("Numero d'ordine:");
+        let codice = prompt("Cerca numero d'ordine:");
         if (codice.length === 6 && !isNaN(codice)) {
             let nuovoURL = `https://www.olalla.it/wp-admin/post.php?post=${codice}&action=edit`;
             window.location.href = nuovoURL;
