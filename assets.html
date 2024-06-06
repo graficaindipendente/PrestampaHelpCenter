@@ -99,23 +99,7 @@
 
 
 				<div class="header-back header-back-simple header-back-small"></div><div id="content"><div class="container"><div class="row"><div class="col-md-12"></div></div>
-				<script>
-					// Funzione per caricare e visualizzare il contenuto del file TXT
-					function loadTxtFile(file) {
-					  var rawFile = new XMLHttpRequest();
-					  rawFile.open("GET", file, false);
-					  rawFile.onreadystatechange = function () {
-						if(rawFile.readyState === 4) {
-						  if(rawFile.status === 200 || rawFile.status == 0) {
-							var allText = rawFile.responseText;
-							document.getElementById('fileContent').innerText = allText;
-						  }
-						}
-					  }
-					  rawFile.send(null);
-					}
-				  loadTxtFile('vers.txt');
-				  </script>
+
 
 
 
