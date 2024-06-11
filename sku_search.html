@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerca SKU</title>
+</head>
+<body>
+    <script>
+             let codice = prompt("Cerca SKU:");
+{
+            let nuovoURL = `https://www.olalla.it/wp-admin/edit.php?s=${codice}&post_status=all&post_type=product&action=-1&seo_filter&product_type&stock_status&wcpv_product_vendors&paged=1&action2=-1`;
+            window.location.href = nuovoURL;
+        } 
+     
+
+    </script>
+</body>
+</html>
