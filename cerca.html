@@ -44,12 +44,25 @@
     <div class="search-container">
         <input type="text" id="codInput" placeholder="Inserisci COD...">
         <input type="button" value="Cerca Ordine" onclick="searchCOD()">
-  <br>
+<br>  <br>    
         <input type="text" id="skuInput" placeholder="Inserisci SKU...">
         <input type="button" value="Cerca SKU" onclick="searchSKU()">
-    </div>
+        <br>
+        <input type="text" id="prodInput" placeholder="Inserisci parole chiave...">
+        <input type="button" value="Cerca su Olalla.it" onclick="searchPROD()">
+</div>
 
     <script>
+                    function searchCOD() {
+            const codice1 = document.getElementById('codInput').value.trim();
+
+            if (codice1) {
+            let nuovoURL = `https://www.olalla.it/wp-admin/post.php?post=${codice1}&action=edit`;
+                window.location.href = nuovoURL;
+            } else {
+                alert("Per favore, inserisci un codice COD.");
+            }
+        }
         function searchSKU() {
             const codice2 = document.getElementById('skuInput').value.trim();
 
@@ -60,16 +73,21 @@
                 alert("Per favore, inserisci un codice SKU.");
             }
         }
-                function searchCOD() {
-            const codice1 = document.getElementById('codInput').value.trim();
+                        function searchPROD() {
+            const codice3 = document.getElementById('prodInput').value.trim();
 
-            if (codice1) {
-            let nuovoURL = `https://www.olalla.it/wp-admin/post.php?post=${codice1}&action=edit`;
+            if (codice3) {
+            let nuovoURL = `https://www.olalla.it/?s=${codice3}&post_type=product`;
                 window.location.href = nuovoURL;
             } else {
-                alert("Per favore, inserisci un codice COD.");
+                alert("Per favore, inserisci una descrizione migliore.");
             }
         }
+
     </script>
 </body>
 </html>
+
+
+
+
