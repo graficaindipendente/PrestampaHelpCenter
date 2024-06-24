@@ -3,7 +3,7 @@
 
 <head>
 	<!-- Page title -->
-	<title>Report Prestampa | Olallà</title>	<!-- Page description -->
+	<title>Search Prestampa | Olallà</title>	<!-- Page description -->
 	<meta name="description" content="">
 	<!-- Meta -->
 	<meta charset="UTF-8">
@@ -25,13 +25,29 @@
 	<!-- Include StyleSheets -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/custom.css">
-	<script src="js/custom.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> <!-- Include la libreria Marked -->
+	<script src="js/modernizr.js"></script>
+
 
 </head>
 
 <body>
-
+	<script>
+		// Funzione per caricare e visualizzare il contenuto del file TXT
+		function loadTxtFile(file) {
+		  var rawFile = new XMLHttpRequest();
+		  rawFile.open("GET", file, false);
+		  rawFile.onreadystatechange = function () {
+			if(rawFile.readyState === 4) {
+			  if(rawFile.status === 200 || rawFile.status == 0) {
+				var allText = rawFile.responseText;
+				document.getElementById('fileContent').innerText = allText;
+			  }
+			}
+		  }
+		  rawFile.send(null);
+		}
+	  loadTxtFile('vers.txt');
+	  </script>
 	<div class="page js-page ">
 		<div class="header header-over large">
 			<div class="container">
@@ -40,14 +56,14 @@
 						<a href="index.html" class="logo-image ">
 							<img src="img/logos/logo.png" alt="Olallà Help Center"></a>
 							<div class="docs-version js-docs-version">
-								<span class="docs-current-version js-docs-current-version">v1.13 BETA</span>
+								<span class="docs-current-version js-docs-current-version"  id="fileContent"></span>
 							</div></div>
 					<div class="col-md-9 col-sm-6 col-xs-6">
 						<nav class="right helper">
 							<ul class="menu sf-menu js-menu">
-								<li><a href="index.html">main</a> <span class="menu-label">REPORT</span> </li>
-								<li><a href="assets.html">assets</a> </li>
-								<li><a href="knowledge.html">knowledge</a> <span class="menu-label">PROCEDURE</span> </li>
+								<li><a href="index.html">alerts board</a></li>
+								<li><a href="assets.html">assets</a></li>
+								<li><a href="knowledge.html">knowledge</a> <span class="menu-label">procedure</span> </li>
 									<li> | </li>
 								<li><a>tool links</a>
 									<ul>
@@ -63,43 +79,24 @@
 												<li><a href="https://www.olalla.it/wp-admin/edit.php?post_status=wc-in-grafica-oggi&post_type=shop_order&order_by_delivery" target="_blank">GRAFICA BY DELIVERY</a></li>
 												<li><a href="https://www.olalla.it/wp-admin/edit.php?post_status=wc-in-grafica-oggi&post_type=shop_order&order_by_delivery&orderby=date&order=asc" target="_blank">GRAFICA BY DATE</a></li>
 
-												<li><a href="https://www.olalla.it/wp-admin/edit.php?post_status=wc-remake-design&post_type=shop_order&order_by_delivery" target="_blank"><strong>URGENZE BY DELIVERY</strong></a></li>
-
+												<li><a href="https://www.olalla.it/wp-admin/edit.php?post_status=wc-remake-design&post_type=shop_order&order_by_delivery" target="_blank">URGENZE BY DELIVERY</a></li>
+												<li><a href="https://www.olalla.it/wp-admin/edit.php?post_status=wc-remake-design&post_type=shop_order&orderby=date&order=asc" target="_blank">URGENZE BY DATE</a></li>
 											</ul>
 										</li>
 
 										<li><a href="https://sellercentral.amazon.it/" target="_blank">AMAZON</a></li>
-									
-										<li><a href="https://secure.helpscout.net/mailbox/f88f1b24d22dd4db/8219325/" target="_blank">
-											<i>HELP SCOUT mail</i><br><sub><strong>grafica@olalla.it</strong></sub></a></li>
-											<ul>
-												<li><a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">
-												<i>bombo@olalla.it</i><br><sub><strong>ex Bombo mail</strong></sub></a></li>
-												<li><a href="https://mail.google.com/mail/u/3/#inbox" target="_blank">
-												<i>alicec@olalla.it</i><br><sub><strong>ex Alice Bozze Grafica Mail</strong></sub></a></li>
-												<li><a href="https://mail.google.com/mail/u/2/#inbox" target="_blank">
-												<i>grafica@olalla.it</i><br><sub><strong>ex Bozze Grafica Mail</strong></sub></a></li>
-												<li><a href="xxx" target="_blank">xxx</a></li>
-											</ul>
-										</li>
-
-
-
+										<li><a href="https://secure.helpscout.net/mailbox/f88f1b24d22dd4db/8219325/" target="_blank">HELP SCOUT</a></li>
 										<li><a href="https://app.todoist.com/app/project/prioritario-6V2rQ96HHmW5jXPX" target="_blank"><STRong>TodoIst</STRong></a></li>
 
 										<li><a>graphic tools</a>
 											<ul>
 												<li><a href="https://www.artilab.com/" target="_blank">Artilab<br><sub><strong>fornitore esterno</strong></sub></a></li>
-												<li><a href="https://www.spotifycodes.com/#create" target="_blank"><i>Spotify Codes</i><br><sub><strong>genera QR Spotify code</strong></sub></a></li>
+												<li><a href="https://www.spotifycodes.com/#create" target="_blank">Spotify Codes</a>
 													<ul><li><a href="https://open.spotify.com/search" target="_blank">Search</a></li></ul>
 												</li>
-												<li><a href="https://heavens-above.com/skychart2.aspx" target="_blank"><i>SkyChart</i><br><sub><strong>layout base mappe</strong></sub></a></li>
-												<li><a href="https://wordart.com/" target="_blank"> 
-													<i>WordArt</i><br><sub><strong>genera layout tipografici</strong></sub></a></li>
-													
-													
-													
-													WordArt</a></li>
+												<li><a href="https://heavens-above.com/skychart2.aspx" target="_blank">SkyChart</a></li>
+												<li><a href="https://wordart.com/" target="_blank"> WordArt</a></li>
+												<li><a href="https://snazzymaps.com/" target="_blank"> SnazzyMaps</a></li>
 											</ul>
 
                                             <li><a>editor</a>
@@ -111,73 +108,15 @@
 						</nav>
 						<br>
 						<p class="copyright helper right"><font size="1">Alessandro Piovan &amp; Chiara Girotto<br>all rights reserved. 2024 &copy;</font></p>
-						<form id="urlForm">
-							<div class="search-container">
-								<input type="text" id="codInput" placeholder="Inserisci CODICE...">
-								<input type="button" value="Vai all'Ordine" onclick="searchCOD()"> 
-						
-							<input type="text" id="url" name="url" placeholder="Inserisci URL del prodotto..." required>
-							<input type="submit" value="ricerca SKU">
-						</form>
-						<div id="results"></div>
 					</div></div></div></div>
 
-<div id="content"></div>
 
- 						<!-- AVVISO matite piantabili 
-						 <div class="note js-note red">						<span class="list-item-meta">
-							<sup>Codice</sup>  <a>matitesemibombo</a>
-						</span><p class="changelog-date">aprile 2024</p>
-							<h4 class="note-title">Matite Piantabili con Cartoncino Personalizzato Idea Bomboniera Botanica Green Ecologica Semi Fiori</h4>
-							<p class="note-description">AGGIORNATA la grafica originale. ATTENZIONE.</p>
-						</div>
-						 AVVISO tshirtdaddy  
- 						AVVISO tshirtdaddy 
-						 <div class="note js-note purple">						<span class="list-item-meta">
-							<sup>Codice</sup>  <a>Pronto13</a>
-						</span><p class="changelog-date">aprile 2024</p>
-							<h4 class="note-title">EPSON IMMAGINI ed EPSON FOTO</h4>
-							<p class="note-description">NON SERVE PIU' IL MARGINE DI 1CM/2CM NEI DI IMPOSIZIONE NEGLI EPSON DEL PRONTO13.</p>
-						</div>
-						AVVISO tshirtdaddy
-   						AVVISO tshirtdaddy 
-						   <div class="note js-note purple">						<span class="list-item-meta">
-							<sup>Codice</sup>  <a>tshirtdaddy</a>
-						</span><p class="changelog-date">marzo 2024</p>
-							<h4 class="note-title">T-Shirt o Felpa Maglietta “Daddy” Personalizzata con Cuoricino</h4>
-							<p class="note-description">FILE DA CUSTOMLY stacca leggermente la scritta DADDY dal cuore. L'hanno fatta troppo vicina.</p>
-						</div>
-						AVVISO tshirtdaddy  -->
+				<div class="header-back header-back-simple header-back-small"></div><div id="content"><div class="container"><div class="row"><div class="col-md-12"></div></div>
+				
 
-
-						<h3 class="category-title"><a href="https://docs.google.com/spreadsheets/d/1vJH7pbstEBhWQBeYzzvkesky06R6QAGtbG7U1FXkwSQ/edit?usp=drive_link" target="_blank">obiettivi</a></h3>
-						<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQTnJMoo7msbmfVJxSadkSzyuZKBjdKmXJDdNDtPRitylBGzRK0fOAXVGqh4IMKLAcb1UhkKQJbToeJ/pubhtml?widget=true&amp;headers=false" width="80%" height="1000px"></iframe><br><br><br>
-						<h3 class="category-title"><a href="https://docs.google.com/spreadsheets/d/1jqSxQamw2LWhcv91ospPaWT_hMDEm994JoEt0Cw5eNM/edit" target="_blank">report</a></h3>
-						<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQvRG3wMsRF3G3nOn8Fv54TMWauXWvBVQ4RgUg8xpbo1FVuEhi37Wl94M_9oZ9xtbRdQR8D1vCQLJiE/pubhtml?widget=true&amp;headers=false" width="80%" height="600px"></iframe><br><br><br>
-						<h3 class="category-title"><a href="https://app.todoist.com/app/project/6V2rQ96HHmW5jXPX" target="_blank">aspirazioni</a></h3>
-						<iframe src="https://app.todoist.com/app/project/todo-very-awesome-6V2rQ96HHmW5jXPX" width="80%" height="1000px"></iframe>
-									
+					
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <script src="js/all.js"></script>
 <script src="js/custom.js"></script>
